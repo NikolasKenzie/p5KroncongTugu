@@ -1,0 +1,130 @@
+body {
+    background-color: #FFF1D4;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+
+  }
+  .menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  main {
+    padding-top: 50px;
+  }
+  .sec-home {
+    position: relative; /* penting: buat posisi anak absolute jadi acuan */
+    overflow: hidden;   /* biar gambar ga keluar dari section */
+  }
+  .container-home {
+    position: relative;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: transparent; /* kita biarkan gambar terlihat */
+    height: 500px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+  }
+  
+  span {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  .images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* lebih rendah dari .container-home */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.8; /* biar gambar agak transparan */
+    pointer-events: none; /* biar klik tetap ke teks di atas */
+  }
+  .images img {
+    object-fit: cover;
+    width: 150px;
+  }
+  
+.sec-contain {
+  text-align: center;
+  padding-top: 70px;
+}
+.container-navigation-contain {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10em;
+} 
+.container-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+}
+.container-contain img {
+  width: 90px;
+}
+.sec-profile {
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.sec-profile h1 {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+
+  }
