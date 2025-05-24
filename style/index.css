@@ -19,6 +19,7 @@ header {
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: auto;
+    font-family: "Londrina Solid", sans-serif;
   }
   
   .logo {
@@ -35,7 +36,7 @@ header {
   .nav-links a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
+    font-weight: 300;
 
   }
   .menu-toggle {
@@ -47,8 +48,8 @@ header {
     padding-top: 50px;
   }
   .sec-home {
-    position: relative; /* penting: buat posisi anak absolute jadi acuan */
-    overflow: hidden;   /* biar gambar ga keluar dari section */
+    position: relative; 
+    overflow: hidden;   
   }
   .container-home {
     position: relative;
@@ -56,7 +57,7 @@ header {
     font-weight: 300;
     font-size: 2.4rem;
     text-align: center;
-    background-color: transparent; /* kita biarkan gambar terlihat */
+    background-color: transparent; 
     height: 500px;
     z-index: 2;
     display: flex;
@@ -89,7 +90,6 @@ header {
     object-fit: cover;
     width: 150px;
   }
-  
 .sec-contain {
   text-align: center;
   padding-top: 70px;
@@ -99,6 +99,9 @@ header {
   display: flex;
   justify-content: center;
   gap: 80px;
+  background-image: url("/images/putriNari.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .container-contain {
   display: flex;
@@ -171,8 +174,25 @@ header {
 }
 
   @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s ease-in-out;
+    }
+  
     .menu-toggle {
-        display: block;
+      display: block;
     }
 
 
