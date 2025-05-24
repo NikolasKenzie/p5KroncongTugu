@@ -54,7 +54,7 @@ header {
     position: relative;
     font-family: "Londrina Solid", sans-serif;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     text-align: center;
     background-color: transparent; /* kita biarkan gambar terlihat */
     height: 500px;
@@ -63,7 +63,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
   }
   
   span {
@@ -94,13 +93,13 @@ header {
 .sec-contain {
   text-align: center;
   padding-top: 70px;
+  padding-bottom: 90px;
 }
 .container-navigation-contain {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  gap: 10em;
-} 
+  gap: 80px;
+}
 .container-contain {
   display: flex;
   flex-direction: column;
@@ -109,6 +108,10 @@ header {
 }
 .container-contain img {
   width: 90px;
+}
+.container-contain img:hover {
+  transition: 0.4s ease-in-out;
+  transform: scale(1.1);
 }
 .sec-profile {
   margin-top: 20px;
@@ -119,6 +122,52 @@ header {
   font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
+}
+.cotainer-profilexplain {
+  background-color: #FADCAD;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+.container-img-profile {
+  text-align: center;
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #8E4A39;
+}
+
+.container-img-profile-card {
+  padding: 10px;
+  display: flex;
+  animation: scroll 50s linear infinite;
+  width: max-content;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 1rem;
+}
+
+.scroll-content img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
   @media (max-width: 768px) {
