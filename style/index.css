@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: #FFF1D4;
+    scroll-behavior: smooth;
 }
 header {
     position: fixed;
@@ -204,12 +208,12 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* background semi-transparan */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  display: none; /* awalnya disembunyikan */
+  display: none; 
 }
 
 .container-card-popup-history {
@@ -230,6 +234,27 @@ header {
     transform: scale(1);
   }
 }
+.btn-readmore-history {
+  margin-top: 1rem;
+  background-color: #f5c9a5;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-readmore-history:hover {
+  margin-top: 1rem;
+  background-color: #f8b883;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.container-card-popup-history p {
+  overflow-y: scroll;
+}
 
 .container-card-popup-history button {
   margin-top: 1rem;
@@ -244,6 +269,7 @@ header {
 .container-card-popup-history button:hover {
   background-color: #f5c9a5;
 }
+
 
   @media (max-width: 768px) {
     .nav-links {
@@ -280,5 +306,8 @@ header {
       align-items: center;
       justify-content: center;
       gap: 50px;
+    }
+    .container-card-history {
+      width: 87%;
     }
   }

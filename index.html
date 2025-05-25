@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Questrial&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style/index.css">
     <title>Kroncong Tugu</title>
 </head>
@@ -23,9 +25,9 @@
             <div class="logo">Kroncong Tugu</div>
             <nav class="nav-links">
                 <a href="">Beranda</a>
-                <a href="">Sejarah</a>
+                <a href="#secHistory">Sejarah</a>
                 <a href="">Lokasi</a>
-                <a href="">Achievement</a>
+                <a href="">Alat musik</a>
                 <a href="">Kontak</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
@@ -34,7 +36,7 @@
     <main>
         <section class="sec-home">
             <div class="container-home">
-                <h1>GET TO KNOW <span>ABOUT</span> KERONCONG TUGU</h1>
+                <h1 data-aos="fade-right" data-aos-duration="800">GET TO KNOW <span>ABOUT</span> KERONCONG TUGU</h1>
 
             </div>
             <div class="images">
@@ -54,18 +56,18 @@
         <section class="sec-contain">
             <div class="container-navigation-contain">
                 <div class="container-card-contain-history">
-                    <div class="container-contain">
+                    <div class="container-contain" data-aos="fade-up-right" data-aos-duration="1000">
                         <img src="images/containHistory.png" alt="">
                         <h3>History</h3>
                     </div>
                 </div>
-                <div class="container-card-contain-profile">
+                <div class="container-card-contain-profile" data-aos="fade-up" data-aos-duration="1000">
                     <div class="container-contain">
                         <img src="images/containLocation.png" alt="">
                         <h3>Location</h3>
                     </div>
                 </div>
-                <div class="container-card-contain-achievement">
+                <div class="container-card-contain-achievement" data-aos="fade-up-left" data-aos-duration="1000">
                     <div class="container-contain">
                         <img src="images/containAchievement.png" alt="">
                         <h3>Achievement</h3>
@@ -76,7 +78,7 @@
 
         <section class="sec-profile">
 
-            <div class="cotainer-profilexplain">
+            <div class="cotainer-profilexplain" data-aos="zoom-in-up" data-aos-duration="1000">
                 <h1>Profile</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -84,7 +86,7 @@
                     aliquip ex ea commodo consequat.
                 </p>
             </div>
-            <div class="container-img-profile">
+            <div class="container-img-profile" data-aos="zoom-in-down" data-aos-duration="1000">
                 <h2></h2>
                 <div class="scroll-wrapper">
                     <div class="container-img-profile-card">
@@ -115,8 +117,8 @@
             </div>
         </section>
 
-        <section class="sec-history">
-            <div class="container-content-history">
+        <section class="sec-history" id="secHistory">
+            <div class="container-content-history" data-aos="zoom-out" data-aos-duration="1000">
                 <div class="container-card-history">
                     <h2>Sejarah</h2>
                     <p>
@@ -127,7 +129,7 @@
                         aliquip ex ea commodo consequat.
                     </p>
                     <div class="readmore">
-                        <button class="btn-readmore" onclick="showPopup()">read more..</button>
+                        <button class="btn-readmore-history" onclick="showPopup()">read more..</button>
                     </div>
                 </div>
                 <div class="container-img-history">
@@ -148,9 +150,17 @@
                 </div>
             </div>
         </section>
+
+        <section>
+
+        </section>
     </main>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
