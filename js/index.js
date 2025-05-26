@@ -2,7 +2,12 @@ let prevScrollpos = window.pageYOffset;
 const navbar = document.getElementById("navbar");
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
-const navBtn = document.querySelectorAll(".nav-links a");
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
 
 
 window.onscroll = () => {
@@ -22,7 +27,7 @@ toggle.addEventListener("click", () => {
 });
 
 const container = document.querySelector(".home");
-let scrollSpeed = 1; // semakin tinggi semakin cepat
+let scrollSpeed = 1; 
 let scrollInterval;
 
 

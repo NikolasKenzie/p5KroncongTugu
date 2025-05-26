@@ -345,6 +345,7 @@ header {
   
     .menu-toggle {
       display: block;
+      cursor: pointer;
     }
     .container-navigation-contain {
       display: flex;
