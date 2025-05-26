@@ -271,6 +271,60 @@ header {
 }
 
 
+.sec-alatMusik {
+  padding: 30px 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.judul-section {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.scroll-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 12px;
+}
+
+.container-content-alatMusik {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+  width: max-content;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.container-card-macina {
+  flex: 0 0 auto;
+  width: 140px;
+  height: 260px;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #FADCAD;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.container-card-macina img {
+  width: 130px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container-content-alatMusik::-webkit-scrollbar {
+  height: 8px;
+}
+.container-content-alatMusik::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+.container-content-alatMusik::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
   @media (max-width: 768px) {
     .nav-links {
       position: absolute;

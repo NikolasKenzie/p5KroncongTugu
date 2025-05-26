@@ -24,17 +24,17 @@
         <div class="navbar-container">
             <div class="logo">Kroncong Tugu</div>
             <nav class="nav-links">
-                <a href="">Beranda</a>
+                <a href="#secHome">Beranda</a>
                 <a href="#secHistory">Sejarah</a>
                 <a href="">Lokasi</a>
-                <a href="">Alat musik</a>
+                <a href="#secAlatmusik">Alat musik</a>
                 <a href="">Kontak</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </div>
     </header>
     <main>
-        <section class="sec-home">
+        <section class="sec-home" id="secHome">
             <div class="container-home">
                 <h1 data-aos="fade-right" data-aos-duration="800">GET TO KNOW <span>ABOUT</span> KERONCONG TUGU</h1>
 
@@ -151,16 +151,48 @@
             </div>
         </section>
 
-        <section>
+        <section class="sec-alatMusik" id="secAlatmusik">
+            <h2 class="judul-section">Alat Musik</h2>
+            <div class="scroll-wrapper-alatMusik">
+                <div class="container-content-alatMusik">
+                    <div class="container-card-macina">
+                        <img src="images/macina.png" alt="alat musik macina">
+                        <p><strong>Macina</strong></p>
+                        <p>Alat musik tradisional dari daerah XYZ.</p>
+                    </div>
+                    <div class="container-card-macina">
+                        <img src="images/macina.png" alt="alat musik macina">
+                        <p><strong>Macina</strong></p>
+                        <p>Digunakan dalam upacara adat tertentu.</p>
+                    </div>
+                    <div class="container-card-macina">
+                        <img src="images/macina.png" alt="alat musik macina">
+                        <p><strong>Macina</strong></p>
+                        <p>Biasanya dimainkan dengan alat pukul.</p>
+                    </div>
+                    <div class="container-card-macina">
+                        <img src="images/macina.png" alt="alat musik macina">
+                        <p><strong>Macina</strong></p>
+                        <p>Terdiri dari bambu dan kulit binatang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-albumLagu">
+            <div class="container-content-album">
+
+            </div>
 
         </section>
+
     </main>
 
     <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>

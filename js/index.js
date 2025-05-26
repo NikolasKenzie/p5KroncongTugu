@@ -2,6 +2,14 @@ let prevScrollpos = window.pageYOffset;
 const navbar = document.getElementById("navbar");
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const navBtn = document.querySelectorAll(".nav-links a");
+
+
+navBtn.forEach((btn) => {
+  btn.addEventListener("click", function() {
+    navLinks.classList.remove("active");
+  })
+})
 
 window.onscroll = () => {
   const currentScrollPos = window.pageYOffset;
@@ -9,7 +17,10 @@ window.onscroll = () => {
     navbar.style.top = "0";
   } else {
     navbar.style.top = "-100px";
+    navLinks.classList.remove("active");
   }
+
+  
   prevScrollpos = currentScrollPos;
 };
 
