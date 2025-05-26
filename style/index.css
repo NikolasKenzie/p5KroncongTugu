@@ -272,58 +272,63 @@ header {
 
 
 .sec-alatMusik {
-  padding: 30px 0;
-  text-align: center;
-  background-color: transparent;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
 }
 
 .judul-section {
-  font-size: 24px;
+  text-align: center;
   margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
 }
 
-.scroll-wrapper {
+.scroll-wrapper-alatMusik {
   overflow-x: auto;
-  max-width: 100%;
-  padding: 12px;
-}
-
-.container-content-alatMusik {
-  display: flex;
-  gap: 14px;
-  justify-content: flex-start;
-  width: max-content;
-  margin: 0 auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-bottom: 10px;
   scroll-behavior: smooth;
 }
 
+.container-content-alatMusik {
+  display: inline-flex;
+  gap: 16px;
+  padding: 10px;
+}
+
 .container-card-macina {
-  flex: 0 0 auto;
-  width: 140px;
-  height: 260px;
-  border-radius: 12px;
-  padding: 12px;
-  background-color: #FADCAD;
-  text-align: center;
+  min-width: 200px;
+  max-width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.container-card-macina p {
+  word-wrap: break-word;       
+  overflow-wrap: break-word;  
+  white-space: normal;        
+  max-width: 100%;       
+  margin: 0 0 10px 0;
+}
+.scroll-wrapper-alatMusik h4 {
+  display: none;
+}
+.container-card-macina:hover {
+  transform: scale(1.05);
 }
 
 .container-card-macina img {
-  width: 130px;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.container-content-alatMusik::-webkit-scrollbar {
-  height: 8px;
-}
-.container-content-alatMusik::-webkit-scrollbar-thumb {
-  background-color: #aaa;
-  border-radius: 4px;
-}
-.container-content-alatMusik::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
 
   @media (max-width: 768px) {
     .nav-links {
@@ -364,5 +369,8 @@ header {
     }
     .container-card-history {
       width: 87%;
+    }
+    .scroll-wrapper-alatMusik h4 {
+      display: block;
     }
   }

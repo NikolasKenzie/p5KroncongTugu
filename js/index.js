@@ -39,3 +39,4 @@ function closePopup() {
   document.getElementById("popupHistory").style.display = "none";
 }
 
+alert("HAHAHA DATA ANDA KENA HACK!")
