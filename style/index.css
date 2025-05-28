@@ -183,7 +183,8 @@ header {
 .container-content-history {
   text-align: center;
   padding-top: 20px;
-  margin-top: 20px;
+  padding-bottom: 80px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,6 +282,8 @@ header {
   margin-bottom: 20px;
   font-size: 28px;
   color: #333;
+  font-family: "Londrina Solid";
+  font-weight: 400;
 }
 
 .scroll-wrapper-alatMusik {
@@ -297,7 +300,7 @@ header {
   padding: 10px;
 }
 
-.container-card-macina {
+.container-card-alatMusik {
   min-width: 200px;
   max-width: 200px;
   background-color: white;
@@ -308,21 +311,20 @@ header {
   text-align: center;
   transition: transform 0.3s;
 }
-.container-card-macina p {
+.container-card-alatMusik p {
   word-wrap: break-word;       
   overflow-wrap: break-word;  
   white-space: normal;        
   max-width: 100%;       
   margin: 0 0 10px 0;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
 }
-.scroll-wrapper-alatMusik h4 {
-  display: none;
-}
-.container-card-macina:hover {
+.container-card-alatMusik:hover {
   transform: scale(1.05);
 }
 
-.container-card-macina img {
+.container-card-alatMusik img {
   width: 100%;
   height: auto;
   border-radius: 8px;

@@ -39,4 +39,14 @@ function closePopup() {
   document.getElementById("popupHistory").style.display = "none";
 }
 
-alert("HAHAHA DATA ANDA KENA HACK!")
+const scrollWrapper = document.querySelector('.scroll-wrapper-alatMusik');
+
+scrollWrapper.addEventListener('wheel', function(scroll) {
+  if (scroll.deltaY !== 0) {
+    scroll.preventDefault();
+    this.scrollLeft += scroll.deltaY; 
+  }
+});
+
+
+// alert("HAHAHA DATA ANDA KENA HACK!")
