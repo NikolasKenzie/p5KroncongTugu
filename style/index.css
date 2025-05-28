@@ -2,98 +2,97 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    background-color: #FFF1D4;
-    scroll-behavior: smooth;
+  background-color: #fff1d4;
+  scroll-behavior: smooth;
 }
 header {
-    position: fixed;
-    width: 100%;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    transition: top 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: auto;
-    font-family: "Londrina Solid", sans-serif;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 300;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  }
-  .menu-toggle {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-  main {
-    padding-top: 50px;
-  }
-  .sec-home {
-    position: relative; 
-    overflow: hidden;   
-  }
-  .container-home {
-    position: relative;
-    font-family: "Londrina Solid", sans-serif;
-    font-weight: 300;
-    font-size: 2.4rem;
-    text-align: center;
-    background-color: transparent; 
-    height: 500px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  span {
-    font-size: 1.7rem;
-    font-weight: 300;
-  }
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Londrina Solid", sans-serif;
+}
 
-  .images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* lebih rendah dari .container-home */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    opacity: 0.8; /* biar gambar agak transparan */
-    pointer-events: none; /* biar klik tetap ke teks di atas */
-  }
-  .images img {
-    object-fit: cover;
-    width: 150px;
-  }
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 300;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+main {
+  padding-top: 50px;
+}
+.sec-home {
+  position: relative;
+  overflow: hidden;
+}
+.container-home {
+  position: relative;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: transparent;
+  height: 500px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* lebih rendah dari .container-home */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.8; /* biar gambar agak transparan */
+  pointer-events: none; /* biar klik tetap ke teks di atas */
+}
+.images img {
+  object-fit: cover;
+  width: 150px;
+}
 .sec-contain {
   text-align: center;
   padding-top: 70px;
@@ -134,13 +133,12 @@ header {
   text-align: center;
 }
 .cotainer-profilexplain {
-  background-color: #FADCAD;
+  background-color: #fadcad;
   width: 70%;
   margin: 0 auto;
   padding: 1.3rem;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
 }
 .container-img-profile {
   text-align: center;
@@ -149,7 +147,7 @@ header {
 .scroll-wrapper {
   overflow: hidden;
   border-radius: 12px;
-  background-color: #8E4A39;
+  background-color: #8e4a39;
 }
 
 .container-img-profile-card {
@@ -179,7 +177,6 @@ header {
   }
 }
 
-
 .container-content-history {
   text-align: center;
   padding-top: 20px;
@@ -191,13 +188,11 @@ header {
   gap: 50px;
 }
 .container-card-history {
-  background-color: #FADCAD;
+  background-color: #fadcad;
   width: 50%;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05),
-            0 6px 12px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 #img-history {
   width: 100px;
@@ -214,16 +209,17 @@ header {
   align-items: center;
   justify-content: center;
   z-index: 999;
-  display: none; 
+  display: none;
 }
-
 .container-card-popup-history {
-  background-color: #FFF1D4;
+  background-color: #fff1d4;
   padding: 2rem;
   max-width: 500px;
+
   border-radius: 16px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease;
+  text-align: center;
 }
 @keyframes fadeIn {
   from {
@@ -259,7 +255,7 @@ header {
 
 .container-card-popup-history button {
   margin-top: 1rem;
-  background-color: #FADCAD;
+  background-color: #fadcad;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -271,10 +267,9 @@ header {
   background-color: #f5c9a5;
 }
 
-
 .sec-alatMusik {
   padding: 40px 20px;
-  background-color: #FFF1D4;
+  background-color: #fff1d4;
   border-radius: 20px;
 }
 
@@ -307,16 +302,16 @@ header {
   background-color: white;
   border-radius: 10px;
   padding: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   text-align: center;
   transition: transform 0.3s;
 }
 .container-card-alatMusik p {
-  word-wrap: break-word;       
-  overflow-wrap: break-word;  
-  white-space: normal;        
-  max-width: 100%;       
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
   margin: 0 0 10px 0;
   font-family: "Londrina Solid", sans-serif;
   font-weight: 300;
@@ -333,7 +328,7 @@ header {
 }
 .section-albumLagu {
   padding: 40px 20px;
-  background-color: #FFF1D4;
+  background-color: #fff1d4;
 }
 
 .judul-section {
@@ -364,49 +359,95 @@ header {
 .album-card:hover {
   transform: translateY(-5px);
 }
-  
 
-  @media (max-width: 768px) {
-    .nav-links {
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: #fff;
-      flex-direction: column;
-      width: 100%;
-      display: none;
-    }
-  
-    .nav-links.active {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 0.5s ease-in-out;
-    }
-  
-    .menu-toggle {
-      display: block;
-      cursor: pointer;
-    }
-    .container-navigation-contain {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .container-content-history {
-      text-align: center;
-      padding-top: 20px;
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 50px;
-    }
-    .container-card-history {
-      width: 87%;
-    }
-    .scroll-wrapper-alatMusik h4 {
-      display: block;
-    }
+/* CSS FOOTER */
+.site-footer {
+  background-color: #8c6239; /* Warna coklat tua yang hangat */
+  color: #fffbe9;
+  padding: 40px 20px 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container > div {
+  flex: 1 1 300px;
+}
+
+.site-footer h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.site-footer a {
+  color: #ffe4b5;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
+  .footer-container > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .container-navigation-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-content-history {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .container-card-history {
+    width: 87%;
+  }
+  .scroll-wrapper-alatMusik h4 {
+    display: block;
+  }
+}
