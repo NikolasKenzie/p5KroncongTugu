@@ -48,5 +48,21 @@ scrollWrapper.addEventListener('wheel', function(scroll) {
   }
 });
 
+const navInstagram = document.getElementById("logoInstagram")
+const navSpotify = document.getElementById("logoSpotify")
+const navTiktok = document.getElementById("logoTiktok")
+const navYoutube = document.getElementById("logoYoutube")
+navInstagram.onclick = function() {
+  window.location.href = "https://www.instagram.com/krontjongtoegoe?igsh=MTM2Ym56NTY1MWxhdA==";
 
+}
+navSpotify.onclick = function() {
+  window.location.href = "https://open.spotify.com/artist/09vjUcI4LLaZg5HOxHlleZ?si=L5R5kl2eSnuLhpwqAX5q5A"
+}
+navTiktok.onclick = function() {
+  window.location.href = "https://www.tiktok.com/@krontjongtoegoe?_t=ZS-8wkdMPOIiVG&_r=1"
+}
+navYoutube.onclick = function() {
+  window.open("https://youtube.com/@krontjongtoegoemusic?si=6SO0kSjJORqmzpcc")
+}
 // alert("HAHAHA DATA ANDA KENA HACK!")

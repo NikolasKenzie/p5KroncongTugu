@@ -4,6 +4,7 @@ html {
 body {
   background-color: #fff1d4;
   scroll-behavior: smooth;
+  
 }
 header {
   position: fixed;
@@ -41,6 +42,11 @@ header {
   text-decoration: none;
   color: #333;
   font-weight: 300;
+  transition: 230ms ease-in-out;
+}
+.nav-links a:hover {
+  border-bottom: 1px solid black;
+  transition: 230ms ease-in-out;
 }
 .menu-toggle {
   display: none;
@@ -215,11 +221,17 @@ span {
   background-color: #fff1d4;
   padding: 2rem;
   max-width: 500px;
-
+  max-height: 90vh; /* Batas tinggi maksimal */
+  overflow-y: auto;  /* Bikin kontennya bisa di-scroll */
   border-radius: 16px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease;
   text-align: center;
+}
+
+
+.ul-history-popup {
+  text-align: left;
 }
 @keyframes fadeIn {
   from {
@@ -249,9 +261,7 @@ span {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.container-card-popup-history p {
-  overflow-y: scroll;
-}
+
 
 .container-card-popup-history button {
   margin-top: 1rem;
@@ -341,7 +351,7 @@ span {
 
 .container-content-album {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
   gap: 20px;
   justify-items: center;
 }
@@ -360,52 +370,41 @@ span {
   transform: translateY(-5px);
 }
 
-/* CSS FOOTER */
-.site-footer {
-  background-color: #8c6239; /* Warna coklat tua yang hangat */
-  color: #fffbe9;
-  padding: 40px 20px 20px;
-  font-family: "Arial", sans-serif;
-}
+footer {
+  background-color: #222;
+  width: 100%;
+  color: whitesmoke;
+  padding: 10px 5px 12px 5px;
+  border-radius: 12px;
 
-.footer-container {
+}
+.container-content-footer {
+  text-align: center;
+}
+.container-footer-sosmed {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container-footer-instagram,
+.container-footer-spotify,
+.container-footer-tiktok,
+.container-footer-youtube {
+  transition: transform 540ms ease;
 }
 
-.footer-container > div {
-  flex: 1 1 300px;
+
+.container-footer-instagram:hover,
+.container-footer-spotify:hover,
+.container-footer-tiktok:hover,
+.container-footer-youtube:hover {
+  transform: scale(1.2);
+  transition: 540ms ease;
 }
 
-.site-footer h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
 
-.site-footer a {
-  color: #ffe4b5;
-  text-decoration: none;
-}
-.site-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-container > div {
-    width: 100%;
-  }
-}
 
 @media (max-width: 768px) {
   .nav-links {
@@ -449,5 +448,14 @@ span {
   }
   .scroll-wrapper-alatMusik h4 {
     display: block;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-container > div {
+    width: 100%;
   }
 }
