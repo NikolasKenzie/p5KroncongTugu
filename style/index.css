@@ -399,7 +399,7 @@ footer {
 .container-content-footer {
   text-align: center;
 }
-.container-content-footer h2 {
+.container-content-footer h2 :nth-child(1) {
   font-family: "Londrina Solid", Georgia, 'Times New Roman', Times, serif;
   font-weight: 300;
 }
