@@ -33,6 +33,8 @@ let scrollInterval;
 
 function showPopup() {
   document.getElementById("popupHistory").style.display = "flex";
+  navbar.style.display = 'none'
+
 }
 
 function closePopup() {
