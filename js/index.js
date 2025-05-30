@@ -73,4 +73,3 @@ navTiktok.onclick = function() {
 navYoutube.onclick = function() {
   window.open("https://youtube.com/@krontjongtoegoemusic?si=6SO0kSjJORqmzpcc")
 }
-// alert("HAHAHA DATA ANDA KENA HACK!")
