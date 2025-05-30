@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Questrial&display=swap"
         rel="stylesheet">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style/index.css">
@@ -26,9 +27,9 @@
             <nav class="nav-links">
                 <a href="#secHome">Beranda</a>
                 <a href="#secHistory">Sejarah</a>
-                <a href="">Lokasi</a>
+                <a href="#contain">Lokasi</a>
                 <a href="#secAlatmusik">Alat musik</a>
-                <a href="">Tentang kami</a>
+                <a href="#findUs">Tentang kami</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </div>
@@ -53,7 +54,7 @@
             </div>
         </section>
 
-        <section class="sec-contain">
+        <section class="sec-contain" id="contain">
             <div class="container-navigation-contain">
                 <div class="container-card-contain-history">
                     <div class="container-contain" data-aos="fade-up-right" data-aos-duration="1000">
@@ -61,7 +62,8 @@
                         <h3>History</h3>
                     </div>
                 </div>
-                <div class="container-card-contain-profile" data-aos="fade-up" data-aos-duration="1000">
+                <div class="container-card-contain-profile" data-aos="fade-up" data-aos-duration="1000"
+                    id="navLocation">
                     <div class="container-contain">
                         <img src="images/containLocation.png" alt="">
                         <h3>Location</h3>
@@ -91,7 +93,8 @@
                 <div class="scroll-wrapper">
                     <div class="container-img-profile-card">
                         <div class="scroll-content">
-                            <img src="images/IMG_2794.JPG" alt="">
+                            <img src="images/WhatsApp Image 2025-05-30 at 10.12.51.jpeg" alt="">
+                            <img src="images/WhatsApp Image 2025-05-30 at 10.12.50.jpeg" alt="">
                             <img src="images/IMG_2799.JPG" alt="">
                             <img src="images/IMG_2803.JPG" alt="">
                             <img src="images/IMG_2804.JPG" alt="">
@@ -102,7 +105,8 @@
                             <img src="images/IMG_2823.JPG" alt="">
 
                             <!-- DUPE loop -->
-                            <img src="images/IMG_2794.JPG" alt="">
+                            <img src="images/WhatsApp Image 2025-05-30 at 10.12.51.jpeg" alt="">
+                            <img src="images/WhatsApp Image 2025-05-30 at 10.12.50.jpeg" alt="">
                             <img src="images/IMG_2799.JPG" alt="">
                             <img src="images/IMG_2803.JPG" alt="">
                             <img src="images/IMG_2804.JPG" alt="">
@@ -274,27 +278,47 @@
                     <div class="container-card-alatMusik">
                         <img src="images/biola.png" alt="alat musik macina">
                         <p><strong>biola</strong></p>
-                        <p>Alat musik yang dimainkan dengan cara digesek</p>
+                        <p>
+                            memberikan sentuhan melodi yang lembut dan romantis dalam musik keroncong, memberikan nuansa
+                            khas yang menenangkan.
+                        </p>
                     </div>
                     <div class="container-card-alatMusik">
                         <img src="images/bass.jpg" alt="alat musik macina">
                         <p><strong>bass</strong></p>
-                        <p>Terdiri dari bambu dan kulit binatang.</p>
+                        <p>
+                            Instrumen ini memberikan dasar ritme dan harmoni yang memperkuat keseluruhan aransemen musik
+                            keroncong.
+                        </p>
                     </div>
                     <div class="container-card-alatMusik">
                         <img src="images/rebana.jpg" alt="alat musik macina">
                         <p><strong>rebana</strong></p>
-                        <p>Terdiri dari bambu dan kulit binatang.</p>
+                        <p>Alat musik yang dimainkan dengan cara dipukul dan biasanya mengatur tempo</p>
+                    </div>
+                    <div class="container-card-alatMusik">
+                        <img src="images/gitar.jpg" alt="alat musik macina">
+                        <p><strong>Seruling</strong></p>
+                        <p>
+                            menambah keindahan suara yang ringan dan melodius, sering kali digunakan untuk memainkan
+                            melodi utama dalam beberapa lagu keroncong.
+                        </p>
                     </div>
                     <div class="container-card-alatMusik">
                         <img src="images/cello.jpg" alt="alat musik macina">
                         <p><strong>cello</strong></p>
-                        <p>Terdiri dari bambu dan kulit binatang.</p>
+                        <p>
+                            Instrumen ini memberikan dasar ritme dan harmoni yang memperkuat keseluruhan aransemen musik
+                            keroncong.
+                        </p>
                     </div>
                     <div class="container-card-alatMusik">
                         <img src="images/gitar.jpg" alt="alat musik macina">
                         <p><strong>gitar</strong></p>
-                        <p>Terdiri dari bambu dan kulit binatang.</p>
+                        <p>
+                            instrumen utama yang mengiringi lagu-lagu keroncong. Pemain gitar biasanya menggunakan
+                            teknik petikan yang khas untuk menghasilkan suara ritmis yang teratur.
+                        </p>
                     </div>
                 </div>
                 <h4>Geser ke kanan>></h4>
@@ -316,7 +340,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="findUs">
         <div class="container-content-footer">
             <h3>Find us</h3>
             <div class="container-footer-sosmed">
@@ -333,7 +357,7 @@
                     <img src="images/logoYoutube.png" id="logoYoutube" alt="youtube" width="70px">
                 </div>
             </div>
-            
+
         </div>
     </footer>
 

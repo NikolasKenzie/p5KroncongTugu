@@ -192,6 +192,7 @@ span {
   align-items: center;
   justify-content: center;
   gap: 50px;
+  /* font-family: "Londrina Solid", sans-serif; */
 }
 .container-card-history {
   background-color: #fadcad;
@@ -199,6 +200,7 @@ span {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 6px 12px rgba(0, 0, 0, 0.1);
+  
 }
 #img-history {
   width: 100px;
