@@ -316,7 +316,7 @@ span {
 .container-content-alatMusik {
   display: inline-flex;
   gap: 16px;
-  padding: 10px;
+  padding: 20px 5px 5px 5px;
 }
 
 .container-card-alatMusik {
@@ -342,7 +342,8 @@ span {
 }
 
 .container-card-alatMusik:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) translateY(-10px);
+
 }
 
 .container-card-alatMusik img {
@@ -398,6 +399,10 @@ footer {
 .container-content-footer {
   text-align: center;
 }
+.container-content-footer h2 {
+  font-family: "Londrina Solid", Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
 .container-footer-sosmed {
   display: flex;
   flex-direction: row;
@@ -418,7 +423,7 @@ footer {
 .container-footer-spotify:hover,
 .container-footer-tiktok:hover,
 .container-footer-youtube:hover {
-  transform: scale(1.2);
+  transform: translateY(-5px);
   transition: 540ms ease;
 }
 
