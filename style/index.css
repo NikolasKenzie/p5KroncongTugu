@@ -203,7 +203,7 @@ span {
   
 }
 #img-history {
-  width: 100px;
+  width: 150px;
   height: auto;
 }
 .container-popup-history {
@@ -230,7 +230,9 @@ span {
   animation: fadeIn 0.3s ease;
   text-align: center;
 }
-
+.container-card-popup-history :nth-child(2) {
+  text-align: justify;
+}
 
 .ul-history-popup {
   text-align: left;
