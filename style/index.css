@@ -264,6 +264,9 @@ span {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 150px;
+  height: 40px;
+  
 }
 .btn-readmore-history:hover {
   margin-top: 1rem;
