@@ -21,7 +21,6 @@ window.onscroll = () => {
   } else {
     navbar.style.top = "-100px";
   }
-
   
   prevScrollpos = currentScrollPos;
 };
@@ -58,7 +57,6 @@ const navLocation = document.getElementById("navLocation")
 navLocation.onclick = function() {
   window.open("https://maps.app.goo.gl/4jeqQgydLuVS1Mjk7?g_st=iw");
 }
-
 
 const navInstagram = document.getElementById("logoInstagram")
 const navSpotify = document.getElementById("logoSpotify")
