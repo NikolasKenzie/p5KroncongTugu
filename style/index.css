@@ -17,7 +17,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 /* Loading */
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +46,7 @@ header {
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 15px;
-}
+} */
 
 /*jgn diubah */
 @keyframes spin {
@@ -55,14 +55,14 @@ header {
   }
 }
 
-
+/* 
 .loader h2 {
   font-family: Arial, sans-serif;
   color: #555;
   font-size: 1.2rem;
   letter-spacing: 1px;
 }
-
+ */
 
 
 .navbar-container {

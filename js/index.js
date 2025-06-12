@@ -9,10 +9,10 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   });
 });
 
-window.addEventListener("load", function() {
-  const preloader = this.document.getElementById("preloader")
-  preloader.style.display = 'none'
-})
+// window.addEventListener("load", function() {
+//   const preloader = this.document.getElementById("preloader")
+//   preloader.style.display = 'none'
+// })
 
 window.onscroll = () => {
   const currentScrollPos = window.pageYOffset;
